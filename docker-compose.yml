@@ -1,0 +1,11 @@
+master:
+  build: .
+
+slave1:
+  build: .
+
+slave2:
+  build: .
+
+salve3:
+  build: .

@@ -1,0 +1,2 @@
+defmodule EctoMultiSlaves do
+end
