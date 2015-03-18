@@ -22,3 +22,35 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+config :master, EctoMultiSlaves.Repo,
+    adapter: Ecto.Adapters.Postgres,
+    database: "ecto_simple",
+    username: "postgres",
+    password: "postgres",
+    hostname: "localhost",
+    port: 5432
+
+
+config :slave_one, EctoMultiSlaves.Repo,
+       adapter: Ecto.Adapters.Postgres,
+       database: "ectomulti",
+       username: "postgres",
+       password: "postgres",
+       hostname: "localhost",
+       port: 5434
+
+config :slave_two, EctoMultiSlaves.Repo,
+       adapter: Ecto.Adapters.Postgres,
+       database: "ectomulti",
+       username: "postgres",
+       password: "postgres",
+       hostname: "localhost",
+       port: 5436
+
+config :slave_three, EctoMultiSlaves.Repo,
+       adapter: Ecto.Adapters.Postgres,
+       database: "ectomulti",
+       username: "postgres",
+       password: "postgres",
+       hostname: "localhost",
+       port: 5438

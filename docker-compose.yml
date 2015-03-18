@@ -1,11 +1,15 @@
 master:
   build: .
+  port: "5432:5432"
 
-slave1:
+slave_one:
   build: .
+  port: "5434:5434"
 
-slave2:
+slave_two:
   build: .
+  port: "5436:5436"
 
-salve3:
+salve_three:
   build: .
+  port: "5438:5438"
