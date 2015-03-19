@@ -23,12 +23,12 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 config :master, EctoMultiSlaves.Repo.Master,
-    adapter: Ecto.Adapters.Postgres,
-    database: "ecto_simple",
-    username: "postgres",
-    password: "postgres",
-    hostname: "localhost",
-    port: 5432
+       adapter: Ecto.Adapters.Postgres,
+       database: "ecto_simple",
+       username: "postgres",
+       password: "postgres",
+       hostname: "localhost",
+       port: 5432
 
 config :slave_one, EctoMultiSlaves.Repo.SlaveOne,
        adapter: Ecto.Adapters.Postgres,
@@ -53,3 +53,11 @@ config :slave_three, EctoMultiSlaves.Repo.SlaveThree,
        password: "postgres",
        hostname: "localhost",
        port: 5438
+
+config :slave_four, EctoMultiSlaves.Repo.SlaveFour,
+       adapter: Ecto.Adapters.Postgres,
+       database: "ectomulti",
+       username: "postgres",
+       password: "postgres",
+       hostname: "localhost",
+       port: 5440

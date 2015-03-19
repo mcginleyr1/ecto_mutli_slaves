@@ -13,3 +13,8 @@ slave_two:
 salve_three:
   build: .
   port: "5438:5438"
+
+
+salve_three:
+  build: .
+  port: "5440:5440"  
