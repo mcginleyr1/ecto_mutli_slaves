@@ -12,8 +12,8 @@ defmodule EctoMultiSlaves.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [mod: {EctoMultiSlaves.App, []},
-     applications: [:logger, :postegrex, :ecto]]
+    [
+     applications: [:logger]]
   end
 
   # Dependencies can be Hex packages:
