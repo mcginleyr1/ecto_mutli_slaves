@@ -22,42 +22,42 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :master, EctoMultiSlaves.Repo.Master,
-       adapter: Ecto.Adapters.Postgres,
-       database: "ecto_simple",
-       username: "postgres",
-       password: "postgres",
-       hostname: "localhost",
-       port: 5432
+config :ecto_multi_slaves, EctoMultiSlaves.Repo.Master,
+                         adapter: Ecto.Adapters.Postgres,
+                         database: "ecto_simple",
+                         username: "postgres",
+                         password: "postgres",
+                         hostname: "localhost",
+                         port: 5432
 
-config :slave_one, EctoMultiSlaves.Repo.SlaveOne,
-       adapter: Ecto.Adapters.Postgres,
-       database: "ectomulti",
-       username: "postgres",
-       password: "postgres",
-       hostname: "localhost",
-       port: 5434
+config :ecto_multi_slaves, EctoMultiSlaves.Repo.SlaveOne,
+                         adapter: Ecto.Adapters.Postgres,
+                         database: "slaveone",
+                         username: "postgres",
+                         password: "postgres",
+                         hostname: "localhost",
+                         port: 5434
 
-config :slave_two, EctoMultiSlaves.Repo.SlaveTwo,
-       adapter: Ecto.Adapters.Postgres,
-       database: "ectomulti",
-       username: "postgres",
-       password: "postgres",
-       hostname: "localhost",
-       port: 5436
+config :ecto_multi_slaves, EctoMultiSlaves.Repo.SlaveTwo,
+                         adapter: Ecto.Adapters.Postgres,
+                         database: "slavetwo",
+                         username: "postgres",
+                         password: "postgres",
+                         hostname: "localhost",
+                         port: 5436
 
-config :slave_three, EctoMultiSlaves.Repo.SlaveThree,
-       adapter: Ecto.Adapters.Postgres,
-       database: "ectomulti",
-       username: "postgres",
-       password: "postgres",
-       hostname: "localhost",
-       port: 5438
+config :ecto_multi_slaves, EctoMultiSlaves.Repo.SlaveThree,
+                         adapter: Ecto.Adapters.Postgres,
+                         database: "slavethree",
+                         username: "postgres",
+                         password: "postgres",
+                         hostname: "localhost",
+                         port: 5438
 
-config :slave_four, EctoMultiSlaves.Repo.SlaveFour,
-       adapter: Ecto.Adapters.Postgres,
-       database: "ectomulti",
-       username: "postgres",
-       password: "postgres",
-       hostname: "localhost",
-       port: 5440
+config :ecto_multi_slaves, EctoMultiSlaves.Repo.SlaveFour,
+                         adapter: Ecto.Adapters.Postgres,
+                         database: "slavefour",
+                         username: "postgres",
+                         password: "postgres",
+                         hostname: "localhost",
+                         port: 5440

@@ -1,21 +1,21 @@
 defmodule EctoMultiSlaves.Repo.Master do
-  use Ecto.Repo, otp_app: :master
+  use Ecto.Repo, otp_app: :ecto_multi_slaves
 end
 
 defmodule EctoMultiSlaves.Repo.SlaveOne do
-  use Ecto.Repo, otp_app: :slave_one
+  use Ecto.Repo, otp_app: :ecto_multi_slaves
 end
 
 defmodule EctoMultiSlaves.Repo.SlaveTwo do
-  use Ecto.Repo, otp_app: :slave_two
+  use Ecto.Repo, otp_app: :ecto_multi_slaves
 end
 
 defmodule EctoMultiSlaves.Repo.SlaveThree do
-  use Ecto.Repo, otp_app: :slave_three
+  use Ecto.Repo, otp_app: :ecto_multi_slaves
 end
 
 defmodule EctoMultiSlaves.Repo.SlaveFour do
-  use Ecto.Repo, otp_app: :slave_four
+  use Ecto.Repo, otp_app: :ecto_multi_slaves
 end
 
 
